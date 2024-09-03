@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <Image
-                src="/author.svg"
+                src="images/author.svg"
                 alt="Author Logo"
                 className={styles.logo}
                 width={64}

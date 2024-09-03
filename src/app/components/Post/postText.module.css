@@ -1,0 +1,10 @@
+.textContainer {
+    max-width: 60rem;
+}
+
+.text {
+    font-size: 1.125rem;
+    color: var(--primary-color-text);
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}

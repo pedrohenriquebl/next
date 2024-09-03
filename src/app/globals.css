@@ -9,6 +9,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
+  --color-white: #fff;
   --primary-color-text: #21262F;
 
   --primary-glow: conic-gradient(
@@ -92,7 +93,7 @@ body {
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--color-white))
     )
     rgb(var(--background-start-rgb));
 }
