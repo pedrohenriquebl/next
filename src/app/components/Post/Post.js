@@ -1,6 +1,7 @@
 import styles from './post.module.css';
 import PostDetails from './PostDetails'
 import PostText from './PostText'
+import Quote from './Quote'
 
 const postData = {
     title: 'por onde começar',
@@ -17,7 +18,9 @@ const postData = {
         vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os 
         embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como 
         também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.`
-    }
+    },
+    quote: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore dolore 
+    magna aliqua dollor sit amet aint.`
 }
 
 export default function Post() {
@@ -25,6 +28,7 @@ export default function Post() {
         <article>
             <PostDetails {...postData} />
             <PostText text={postData.text} />
+            <Quote quote={postData.quote} />
         </article>
     )
 }

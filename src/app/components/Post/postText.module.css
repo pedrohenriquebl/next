@@ -1,5 +1,6 @@
 .textContainer {
     max-width: 60rem;
+    margin: 0 auto;
 }
 
 .text {
