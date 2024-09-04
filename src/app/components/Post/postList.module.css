@@ -1,0 +1,20 @@
+.listWrapper {
+    max-width: 60rem;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 3rem;
+}
+
+.listContainer {
+    padding-left: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+}
+
+.text {
+    font-size: 1.125rem;
+    color: var(--primary-color-text);
+    line-height: 1.8rem;
+    margin-bottom: 2rem;
+}
