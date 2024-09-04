@@ -18,7 +18,7 @@ export default function PostDetails({ title, readingTime, date }) {
                     priority
                 />
                 <span>
-                    {readingTime} min leitura
+                    {`${readingTime} ${readingTime === 1 ? 'minuto' : 'minutos'} de leitura`}
                 </span>
             </div>
             <div className={styles.card}>

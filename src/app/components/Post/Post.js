@@ -3,6 +3,7 @@ import PostDetails from './PostDetails'
 import PostText from './PostText'
 import Quote from './Quote'
 import PostList from './PostList'
+import Banner from './Banner'
 
 const postData = {
     title: 'por onde começar',
@@ -32,7 +33,10 @@ const postData = {
             'Dollor sit amet abin coin said upper;',
             'Aint no sunfiun weri gasty non;'
         ]
-    }
+    },
+    src: "images/banner_post.png",
+    imageDescription: `Mini-quadros feitos à mão`,
+    imageSource: `Fonte: New York Times`
 };
 
 export default function Post() {
@@ -42,6 +46,7 @@ export default function Post() {
             <PostText text={postData.text} />
             <Quote quote={postData.quote} />
             <PostList list={postData.list} />
+            <Banner src={postData.src} description={postData.imageDescription} source={postData.imageSource} />
         </article>
     )
 }

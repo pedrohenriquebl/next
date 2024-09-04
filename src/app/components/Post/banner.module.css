@@ -1,0 +1,26 @@
+.bannerWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    color: var(--primary-color-text);
+}
+
+.banner {
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 0.688rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0.25rem;
+}
+
+.source small {
+    font-size: 0.688rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
