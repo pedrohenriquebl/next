@@ -40,6 +40,19 @@ const postData = {
     imageSource: `Fonte: New York Times`
 };
 
+const potterData = {
+    title: `Aint oupt sain crays`,
+    text: (
+        <>
+            Lorem Ipsum é simplesmente uma <a href="#">simulação de link</a> da indústria tipográfica e de impressos,
+            e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
+            embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos. Lorem
+            Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado
+            desde o século XVI.
+        </>
+    )
+}
+
 export default function Post() {
     return (
         <article className={styles.articleWrapper}>
@@ -48,7 +61,7 @@ export default function Post() {
             <Quote quote={postData.quote} />
             <PostList list={postData.list} />
             <Banner src={postData.src} description={postData.imageDescription} source={postData.imageSource} />
-            <BookList />
+            <BookList title={potterData.title} text={potterData.text}/>
         </article>
     )
 }

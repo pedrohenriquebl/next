@@ -3,7 +3,7 @@
 import styles from './bookList.module.css';
 import { useEffect, useState } from 'react';
 
-export default function BookList({ title, text}) {
+export default function BookList({ title, text }) {
     const [books, setBooks] = useState([]);
 
     useEffect(() => {
@@ -28,14 +28,16 @@ export default function BookList({ title, text}) {
 
     return (
         <div className={styles.bookListWrapper}>
-            <h1 className={styles.title}>{title}</h1>
-            <p className={styles.text}>{text}</p>
+            <div className={styles.dataWrapper}>
+                <h1 className={styles.title}>{title}</h1>
+                <p className={styles.text}>{text}</p>
+            </div>
             <div className={styles.booksWrapper}>
                 {books.map((book, index) => (
                     <div key={index} className={styles.bookCard}>
                         <img src={book.cover} alt={book.title} className={styles.cover} />
                         <h2 className={styles.bookTitle}>{book.title}</h2>
-                        <p className={styles.author}>Autor: {book.authors}</p>
+                        <span className={styles.author}>Autor: {book.authors}</span>
                     </div>
                 ))}
             </div>
