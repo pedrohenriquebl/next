@@ -4,6 +4,7 @@ import PostText from './PostText'
 import Quote from './Quote'
 import PostList from './PostList'
 import Banner from './Banner'
+import BookList from './BookList'
 
 const postData = {
     title: 'por onde começar',
@@ -41,12 +42,13 @@ const postData = {
 
 export default function Post() {
     return (
-        <article>
+        <article className={styles.articleWrapper}>
             <PostDetails {...postData} />
             <PostText text={postData.text} />
             <Quote quote={postData.quote} />
             <PostList list={postData.list} />
             <Banner src={postData.src} description={postData.imageDescription} source={postData.imageSource} />
+            <BookList />
         </article>
     )
 }

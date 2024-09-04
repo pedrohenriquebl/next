@@ -1,9 +1,13 @@
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  max-width: 73.375rem;
-  margin: 0 auto;
-  background-color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 73.375rem;
+    margin: 0 auto;
+    background-color: var(--color-white);
+
+    @media (max-width: 48rem) {
+        max-width: 100%;
+    }
 }

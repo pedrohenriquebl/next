@@ -5,17 +5,29 @@
     justify-content: center;
     flex-direction: column;
     color: var(--primary-color-text);
+
+    @media (max-width: 73.375rem) {
+        padding: 0 1rem;
+    }
 }
 
 .title {
     font-weight: 900;
     font-size: 3rem;
     margin-bottom: 1rem;
+
+    @media (max-width: 48rem) {
+        text-align: center;
+    }
 }
 
 .subtitle {
     font-size: 1.125rem;
     font-weight: 400;
+
+    @media (max-width: 48rem) {
+        text-align: center;
+    }
 }
 
 .logo {
