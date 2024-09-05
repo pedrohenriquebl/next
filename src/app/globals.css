@@ -2,7 +2,7 @@
   --color-white: #fff;
   --primary-color-text: #21262F;
   --card-color-background: #E9ECF0;
-  --card-color-background-primary: #21262F;
+  --card-color-background-primary: #E9ECF0;
   --post-color-background: #F8F8F9;
 }
 
@@ -10,7 +10,7 @@
   --color-white: #000;
   --primary-color-text: #fff;
   --card-color-background: #21262F;
-  --card-color-background-primary: grey;
+  --card-color-background-primary: #21262F;
   --post-color-background: #000;
 }
 
