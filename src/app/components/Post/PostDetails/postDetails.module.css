@@ -21,6 +21,7 @@
     font-weight: 600;
     font-size: 0.688rem;
     text-transform: uppercase;
+    color: var(--primary-color-text);
 }
 
 .details .title strong {

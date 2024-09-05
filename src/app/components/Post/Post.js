@@ -6,11 +6,16 @@ import PostList from './PostList/PostList'
 import Banner from './Banner/Banner'
 import BookList from './BookList/BookList'
 import PostCard from './PostCard/PostCard';
+import SocialSection from './SocialSection/SocialSection';
 
 const postData = {
     title: 'por onde começar',
     readingTime: 7,
     date: '01/SETEMBRO/2024',
+    likes: 37,
+    tags: [
+        'vendas', 'aplicativo', 'legislação'
+    ],
     text: {
         paragraph1: `Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem 
         sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os 
@@ -80,6 +85,33 @@ const posts = [
     }
 ];
 
+const socialMedia = {
+    whatsapp: {
+        href: '#',
+        src: "icons/social/whatsapp.svg",
+    },
+    facebook: {
+        href: '#',
+        src: "icons/social/facebook.svg",
+    },
+    x: {
+        href: '#',
+        src: "icons/social/x.svg",
+    },
+    linkedin: {
+        href: '#',
+        src: "icons/social/linkedin.svg",
+    },
+    email: {
+        href: '#',
+        src: "icons/social/email.svg",
+    },
+    like: {
+        href: '#',
+        src: "icons/social/like.svg",
+    }
+}
+
 export default function Post() {
     return (
         <article className={styles.articleWrapper}>
@@ -90,6 +122,7 @@ export default function Post() {
             <Banner src={postData.src} description={postData.imageDescription} source={postData.imageSource} />
             <BookList {...potterData}/>
             <PostCard posts={posts} orientation="horizontal" />
+            <SocialSection tags={postData.tags} socialMedia={...socialMedia} likes={postData.likes}/>
         </article>
     )
 }
