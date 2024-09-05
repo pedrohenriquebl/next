@@ -95,6 +95,6 @@
 
 .liked {
     border: 1px solid var(--color-white);
-    background: var(--card-color-background-primary);
+    background: var(--primary-color-text);
     color: var(--color-white);
 }
