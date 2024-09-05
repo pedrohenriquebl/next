@@ -22,7 +22,7 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
-            <button onClick={toggleTheme}>
+            <button className={styles.toggle} onClick={toggleTheme}>
                 {isDarkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
             </button>
             <Image

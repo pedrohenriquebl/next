@@ -11,6 +11,16 @@
     }
 }
 
+.toggle {
+    border: none;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    border-radius: 67.5rem;
+    margin: 1rem 0;
+    color: var(--color-white);
+    background-color: var(--card-color-background-primary);
+}
+
 .title {
     font-weight: 900;
     font-size: 3rem;
