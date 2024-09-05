@@ -1,4 +1,8 @@
 .articleWrapper {
+    @media (max-width: 60rem) {
+        max-width: 100%;
+    }
+
     @media (max-width: 73.375rem) {
         padding: 0 1rem;
     }
