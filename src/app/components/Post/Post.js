@@ -5,6 +5,7 @@ import Quote from './Quote'
 import PostList from './PostList'
 import Banner from './Banner'
 import BookList from './BookList'
+import PostCard from './PostCard';
 
 const postData = {
     title: 'por onde começar',
@@ -41,8 +42,8 @@ const postData = {
 };
 
 const potterData = {
-    title: `Aint oupt sain crays`,
-    text: (
+    headTitle: `Aint oupt sain crays`,
+    headText: (
         <>
             Lorem Ipsum é simplesmente uma <a href="#">simulação de link</a> da indústria tipográfica e de impressos,
             e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os
@@ -50,8 +51,34 @@ const potterData = {
             Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado
             desde o século XVI.
         </>
-    )
+    ),
+    bottomTitle: `Ipsum dollor amet`,
+    bottomText: `Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo 
+        utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para 
+        fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos.`
 }
+
+const posts = [
+    {
+        image: 'images/author.svg',
+        title: 'DESIGN BETTER. FASTER. TOGETHER.',
+        text: `Lorem Ipsum é simplesmente uma pequena simulação de texto da indústria tipográfica e de impressos, e vem 
+        sendo utilizada desde o século XVII amet dollor aint.`,
+        date: '01/setembro/2024',
+        readingTime: 7,
+        totalLikes: 37
+
+    },
+    {
+        image: 'images/author.svg',
+        title: 'DESIGN BETTER. FASTER. TOGETHER.',
+        text: `Lorem Ipsum é simplesmente uma pequena simulação de texto da indústria tipográfica e de impressos, e vem 
+        sendo utilizada desde o século XVII amet dollor aint.`,
+        date: '01/setembro/2024',
+        readingTime: 7,
+        totalLikes: 37
+    }
+];
 
 export default function Post() {
     return (
@@ -61,7 +88,8 @@ export default function Post() {
             <Quote quote={postData.quote} />
             <PostList list={postData.list} />
             <Banner src={postData.src} description={postData.imageDescription} source={postData.imageSource} />
-            <BookList title={potterData.title} text={potterData.text}/>
+            <BookList {...potterData}/>
+            <PostCard posts={posts} orientation="horizontal" />
         </article>
     )
 }
