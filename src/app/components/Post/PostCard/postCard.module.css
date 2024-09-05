@@ -1,15 +1,40 @@
 .cardListVertical {
     display: flex;
     flex-direction: row;
-    gap: 1rem;
-    max-width: 60rem;
-    margin: 0 0 3rem auto;
+    gap: 3rem;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+
+    @media (max-width: 60rem) {
+        flex-direction: column;
+    }
 }
 
 .cardListVertical .card {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.5rem;
+    background-color: #F8F8F9;
+    border-radius: 1.5rem;
+    padding: 2rem;
+}
+
+.cardListVertical .card .title {
+    color: var(--primary-color-text);
+    font-size: 1.5rem;
+    line-height: 1.95rem;
+    text-align: center;
+}
+
+.cardListVertical .card .text {
+    color: var(--primary-color-text);
+    font-size: 1rem;
+    line-height: 1.6rem;
+    text-align: center;
+    font-weight: 400;
 }
 
 .cardListHorizontal {
@@ -21,6 +46,7 @@
 }
 
 .cardListHorizontal .card {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -81,6 +107,11 @@
 
 .cardListVertical .detailsWrapper {
     gap: 0.5rem;
+
+    @media (max-width: 73rem) {
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .cardDetails {
@@ -98,8 +129,4 @@
     line-height: 1rem;
     font-weight: 800;
     text-transform: uppercase;
-}
-
-.cardListHorizontal .cardDetails {
-
 }

@@ -24,7 +24,13 @@ export default function PostCard({ posts, orientation = 'vertical' }) {
                                 height={16}
                                 priority
                             />
-                            <span>{post.date}</span>
+                            <span>{
+                                orientation === 'horizontal' ? post.date : (() => {
+                                    const [day, month, year] = post.date.split('/');
+                                    const shortMonth = month.slice(0,3);
+                                    return `${day}/${shortMonth}/${year}`;
+                                })()
+                            }</span>
                         </div>
                         <div className={styles.cardDetails}>
                             <Image
@@ -35,7 +41,10 @@ export default function PostCard({ posts, orientation = 'vertical' }) {
                                 priority
                             />
                             <span>
-                                {`${post.readingTime} ${post.readingTime === 1 ? 'minuto' : 'minutos'} de leitura`}
+                                {console.log('Orientation:', orientation)}
+                                {orientation === 'vertical'
+                                    ? `${post.readingTime} ${post.readingTime === 1 ? 'min' : 'min'} leitura`
+                                    : `${post.readingTime} ${post.readingTime === 1 ? 'minuto' : 'minutos'} de leitura`}
                             </span>
                         </div>
                         <div className={styles.cardDetails}>
