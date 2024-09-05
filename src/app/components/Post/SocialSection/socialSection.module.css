@@ -56,7 +56,7 @@
 .tagWrappers ul li:not(:first-child) {
     font-weight: 800;
     padding: 0.25rem 0.50rem;
-    background-color: #E9ECF0;
+    background-color: var(--card-color-background);
     border-radius: 62.5rem;
 }
 
@@ -88,13 +88,13 @@
 }
 
 .notLiked {
-    border: 1px solid var(--primary-color-text);
+    border: 1px solid var(--card-color-background-primary);
     background: var(--color-white);
     color: var(--primary-color-text);
 }
 
 .liked {
     border: 1px solid var(--color-white);
-    background: var(--primary-color-text);
+    background: var(--card-color-background-primary);
     color: var(--color-white);
 }

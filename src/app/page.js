@@ -1,10 +1,20 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect } from 'react';
 import styles from "./page.module.css";
 import Head from 'next/head';
 import Header from "./components/Header/Header";
 import Post from "./components/Post/Post"
 
 export default function Home() {
+    useEffect(() => {
+        const savedMode = localStorage.getItem('theme');
+        if (savedMode) {
+            document.body.classList.add(savedMode === 'dark' ? 'dark-mode' : 'light-mode');
+        }
+    }, []);
+
   return (
       <>
           <Head>

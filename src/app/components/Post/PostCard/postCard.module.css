@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    background-color: #F8F8F9;
+    background-color: var(--post-color-background);
     border-radius: 1.5rem;
     padding: 2rem;
 }
@@ -50,7 +50,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #F8F8F9;
+    background-color: var(--post-color-background);
     padding: 2rem 3rem 2rem 3rem;
     border-radius: 1.5rem;
 
@@ -116,7 +116,7 @@
 
 .cardDetails {
     padding: 0.25rem 0.50rem 0.25rem 0.50rem;
-    background-color: var(--primary-color-text);
+    background-color: var(--card-color-background-primary);
     color: var(--color-white);
     border-radius: 62.5rem;
     display: flex;
