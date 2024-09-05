@@ -13,7 +13,7 @@ export default function PostDetails({ title, readingTime, date }) {
             </div>
             <div className={styles.card}>
                 <Image
-                    src={"./icons/white-clock.svg" }
+                    src={"./icons/clock.svg" }
                     alt="Clock Icon"
                     width={16}
                     height={16}
