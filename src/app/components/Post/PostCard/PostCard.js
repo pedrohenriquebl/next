@@ -41,7 +41,6 @@ export default function PostCard({ posts, orientation = 'vertical' }) {
                                 priority
                             />
                             <span>
-                                {console.log('Orientation:', orientation)}
                                 {orientation === 'vertical'
                                     ? `${post.readingTime} ${post.readingTime === 1 ? 'min' : 'min'} leitura`
                                     : `${post.readingTime} ${post.readingTime === 1 ? 'minuto' : 'minutos'} de leitura`}
